@@ -232,6 +232,107 @@ body{
 
 
 
+/*======================================================================
+##		Topics Section
+=======================================================================*/
+
+.topic-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Définir la largeur minimale et maximale des colonnes */
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+.topic-item {
+    width: 100%; /* Chaque élément occupe la largeur complète de son conteneur */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Espacement entre les éléments */
+}
+
+.topic .section-bg{
+	background-color: #fff;
+}
+.topic-box{
+	margin-bottom: 20px;
+	position: relative;
+}
+.topic-box img{
+	width: 100% !important;
+}
+.topic-title{
+	position: absolute;
+    top: 0px;
+    left: 35%;
+    right: 5%;
+    padding: 5px;
+    background-color: #b0b0ac;
+    
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+
+.classic-title{
+	margin-top: 100px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.incline-div{
+	position: absolute;
+	top: 3px;
+	left: 0;
+	border-top: 60px solid #fabe12;
+	border-right: 60px solid transparent;
+	margin-left: -15px;
+	width: 250px;
+	z-index: 1;
+}
+.incline-small-div{
+	position: absolute;
+	top: 3px;
+	left: 0;
+	border-top: 20px solid #2596be;	
+	border-right: 60px solid transparent;
+	margin-left: -15px;
+	width: 250px;
+	z-index: 1;
+}
+
+.outer-stiker{
+	display: inline-block;
+	color: #b0b0b0;
+	margin-left: 0px;
+}
+.stiker{
+	display: inline-block;
+}
+.inner-stiker{
+	color: #fff;
+	padding-right: 50px;
+	margin-left: 15px;
+	width: 250px;
+}
+.outer-stiker, .inner-stiker{
+	font-weight: 300;
+	z-index: 2;
+	position: relative;
+}
+.topic p{
+	color: #555;
+	font-size: 14px;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+.topic p.p-large{
+	font-size: 16px;
+	font-weight: 400;
+}
+@media (min-width: 768px){
+	.boxed{
+		padding: 0 80px;
+	}
+}
 
 
 
