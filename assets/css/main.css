@@ -8,6 +8,18 @@ body{
 /*======================================================================
 ##		Global Settings
 =======================================================================*/
+/* Set additional styling options for the columns*/
+.column {
+	float: left;
+	width: 50%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .btn-robot, p{
 	font-family: 'Roboto';
 	line-height: 1.5;
